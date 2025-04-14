@@ -6,7 +6,7 @@ def ingrese_numero():
         numero = input("Ingrese un número: ")
         numero = float(numero)  
         if numero < 0:
-            raise NumeroDebeSerPositivo 
+            raise NumeroDebeSerPositivo()
         return numero
     except ValueError:
         raise ValueError("La entrada debe ser un número válido")
